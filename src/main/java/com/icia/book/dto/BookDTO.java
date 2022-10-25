@@ -7,7 +7,7 @@ import lombok.*;
 @ToString
 public class BookDTO {
 
-    private Long bookid;
+    private Long bookId;
     private String bookName;
     private String bookAuthor;
     private String bookPrice;
@@ -20,12 +20,12 @@ public class BookDTO {
 
 
 
-    public Long getBookid() {
-        return bookid;
+    public Long getBookId() {
+        return bookId;
     }
 
-    public void setBookid(Long bookid) {
-        this.bookid = bookid;
+    public void setBookid(Long bookId) {
+        this.bookId = bookId;
     }
 
     public String getBookName() {
@@ -64,7 +64,7 @@ public class BookDTO {
     @Override
     public String toString() {
         return "BookDTO{" +
-                "bookid=" + bookid +
+                "bookid=" + bookId +
                 ", bookName='" + bookName + '\'' +
                 ", bookAuthor='" + bookAuthor + '\'' +
                 ", bookPrice='" + bookPrice + '\'' +

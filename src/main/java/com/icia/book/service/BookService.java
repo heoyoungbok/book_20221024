@@ -5,6 +5,8 @@ import com.icia.book.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BookService {
     @Autowired
@@ -29,6 +31,21 @@ public class BookService {
     public BookDTO findBook() {
        BookDTO findResult=bookRepository.findBook();
        return bookRepository.findBook();
+
+    }
+
+
+    public List<BookDTO> findAll() {
+        return bookRepository.findAll();
+    }
+
+   /* 리턴타입 :
+   * 매개변수:
+   * 매서드이름:
+   * */
+
+    public BookDTO findById(Long bookId) {
+        return bookRepository.findById(bookId);
     }
 }
 

@@ -13,5 +13,6 @@
 <body>
 <a href="/save">bookSave.jsp</a>
 <a href="/findBook">2번책 조회</a>
+<a href="/books">목록조회</a>
 </body>
 </html>
