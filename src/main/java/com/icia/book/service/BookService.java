@@ -20,12 +20,16 @@ public class BookService {
            return false;
         }
 
+
+
+
     }
 
 
-
-
-
+    public BookDTO findBook() {
+       BookDTO findResult=bookRepository.findBook();
+       return bookRepository.findBook();
+    }
 }
 
 

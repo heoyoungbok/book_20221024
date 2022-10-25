@@ -18,5 +18,8 @@ public class BookRepository {
 
        }
 
+    public BookDTO findBook() {
+       return sql.selectOne("Book.findBook");
+    }
 }
 
